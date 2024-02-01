@@ -41,15 +41,6 @@ class Loja:
         else:
             print(f"{produto} não encontrado em estoque.")
 
-    def remover_produto(self, produto, quantidade):
-        if produto in self.estoque:
-            if self.estoque[produto]['quantidade'] >= quantidade:
-                self.estoque[produto]['quantidade'] -= quantidade
-            else:
-                print(f"Quantidade insuficiente de {produto} em estoque.")
-        else:
-            print(f"{produto} não encontrado em estoque.")
-
     def exibir_dados_loja(self):
         print("Dados da loja:")
         print(f"Nome: {self.nome}")
